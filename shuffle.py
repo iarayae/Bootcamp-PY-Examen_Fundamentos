@@ -4,13 +4,13 @@ import random
 def shuffle_alt(pregunta):
     #mezclar alternativas
     #######################################################################
-    pass
-    
+    alternativas = pregunta['alternativas'].copy()
+    random.shuffle(alternativas)
     
     
     #######################################################################
     
-    return pregunta['alternativas']
+    return alternativas
 
 if __name__ == '__main__':
     # si se ejecuta el  programa varias veces las alternativas debieran aparecer en distinto orden
